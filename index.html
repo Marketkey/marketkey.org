@@ -2,55 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MarketKey</title>
-  <meta name="description" content="MarketKey — book a call and let's build." />
-
-  <!-- Basic styling -->
-  <style>
-    :root { --bg:#0b0b0d; --fg:#f4f4f5; --muted:#a1a1aa; --card:#15151a; }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.5}
-    header{padding:32px 20px;text-align:center}
-    .wrap{max-width:960px;margin:0 auto;padding:0 20px}
-    .hero{display:grid;gap:16px;justify-items:center;padding:32px 0}
-    .card{background:var(--card);border:1px solid #222;border-radius:16px;padding:20px;width:100%}
-    h1{font-size:40px;margin:0}
-    p.lead{color:var(--muted);font-size:18px;margin:8px 0 0}
-    footer{color:var(--muted);text-align:center;padding:24px 12px}
-    .cal{min-height:720px}
-    a{color:#9ae6b4;text-decoration:none}
-    a:hover{text-decoration:underline}
-  </style>
-
-  <!-- Calendly embed -->
-  <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css"/>
-  <script async src="https://assets.calendly.com/assets/external/widget.js"></script>
-
-  <!-- Google Analytics (GA4) — replace G-XXXXXXXXXX with your ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  <header class="wrap">
-    <h1>MarketKey</h1>
-    <p class="lead">Websites, apps, and automations that actually ship.</p>
-  </header>
+  <h1>MarketKey</h1>
+  <p>This is a test landing page on GitHub Pages.</p>
 
-  <main class="wrap">
-    <div class="card cal">
-      <!-- Replace the Calendly URL with yours -->
-      <div class="calendly-inline-widget"
-           data-url="https://calendly.com/YOUR-CALENDLY-USERNAME?hide_event_type_details=1&hide_gdpr_banner=1"
-           style="min-width:320px;height:700px;"></div>
-    </div>
-  </main>
-
-  <footer>&copy; <span id="y"></span> MarketKey • <a href="mailto:hello@marketkey.org">hello@marketkey.org</a></footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <!-- Calendly embed -->
+  <div class="calendly-inline-widget"
+       data-url="https://calendly.com/YOUR-CALENDLY-USERNAME"
+       style="min-width:320px;height:700px;"></div>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
